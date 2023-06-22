@@ -1,25 +1,33 @@
-<!DOCTYPE HTML>
-<html lang="en-US">
-<head>
-<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-157295670-1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+<!DOCTYPE html>
+<html>
+   <body>
+       <video autoplay loop width="100%">
 
-  gtag('config', 'UA-157295670-1');
-</script>
+    <source src="rickroll.mp4"
+            type="video/mp4">
 
-<meta charset="UTF-8">
-        <meta http-equiv="refresh" content="0; url=https://shattereddisk.github.io/rickroll/rickroll.mp4">
-        <script type="text/javascript">
-            window.location.href = "https://shattereddisk.github.io/rickroll/rickroll.mp4"
-        </script>
-        <title>Hi</title>
-    </head>
-    <body>
-        <!-- Note: don't tell people to `click` the link, just tell them that it is a link. -->
-        If you are not redirected automatically, follow this <a href='\https://shattereddisk.github.io/rickroll/rickroll.mp4/'>death</a>.
-    </body>
+    Sorry, your browser doesn't support embedded videos.
+</video>
+      <script>
+         // Change the variables below to your liking
+         const currentURL = "rickroll.mp4";
+         const pageTitle = "Loading...";
+         // End of changable variables
+         
+         function setTitle() {
+            document.title = pageTitle;
+         }
+         
+         function redirect() {
+            window.location.href = currentURL;
+         }
+         
+         function onload() {
+            setTitle();
+            redirect();
+         }
+         
+         window.onload = onload();
+       </script>
+   </body>
 </html>
